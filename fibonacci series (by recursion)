@@ -1,0 +1,14 @@
+def fibo(sec,fir,n,ctr):
+    if(ctr<=n):
+        if(ctr<2):
+            print(0)
+        else:
+            print(sec)
+            fir,sec=sec,fir+sec
+        ctr+=1
+    else:
+        return 0
+    fibo(sec,fir,n,ctr)
+n=int(input("enter"))
+ctr=1
+fibo(1,0,n,ctr)
